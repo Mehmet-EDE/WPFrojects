@@ -29,7 +29,7 @@ namespace FirstProject.ViewModel
                     }
                 case ButtonName.READ_COMMAND:
                     {
-                        LabelContent = "WPF Projesi";
+                        LabelContent = "MVVM";
                         break;
                     }
 
