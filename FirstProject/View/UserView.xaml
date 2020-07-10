@@ -1,0 +1,17 @@
+﻿<Window x:Class="FirstProject.View.UserView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FirstProject.View"
+        xmlns:enum="clr-namespace:FirstProject.Enums"
+        mc:Ignorable="d"
+        Title="UserView" Height="450" Width="800">
+    <Grid>
+        <Button Command="{Binding ButtonCommand}" CommandParameter="{x:Static enum:ButtonName.WRITE_COMMAND}" Content="Button1" Width="100" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="304,189,388,180"/>
+        <Button Command="{Binding ButtonCommand}" CommandParameter="{x:Static enum:ButtonName.READ_COMMAND}" Content="Button2" Width="100" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="408,189,284,180"/>
+
+        <TextBox Text="{Binding Message}" Width="250" Height="50" Margin="274,239,268,130"/>
+        <Label Content="{Binding LabelContent}" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+    </Grid>
+</Window>
