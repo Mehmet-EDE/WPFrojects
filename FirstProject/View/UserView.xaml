@@ -10,7 +10,7 @@
     <Grid>
         <Button Command="{Binding ButtonCommand}" CommandParameter="{x:Static enum:ButtonName.WRITE_COMMAND}" Content="Button1" Width="100" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="304,189,388,180"/>
         <Button Command="{Binding ButtonCommand}" CommandParameter="{x:Static enum:ButtonName.READ_COMMAND}" Content="Button2" Width="100" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="408,189,284,180"/>
-
+        <Button Command="{Binding TestCommand}" Content="TEST" Width="150" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center"/>
         <TextBox Text="{Binding Message}" Width="250" Height="50" Margin="274,239,268,130"/>
         <Label Content="{Binding LabelContent}" VerticalAlignment="Top" HorizontalAlignment="Center"/>
     </Grid>

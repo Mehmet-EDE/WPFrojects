@@ -1,11 +1,7 @@
 ﻿using FirstProject.Enums;
 using FirstProject.Helpers;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace FirstProject.ViewModel
@@ -36,6 +32,22 @@ namespace FirstProject.ViewModel
             }
         }
 
+        private ICommand testCommand;
+
+        public ICommand TestCommand
+        {
+            get 
+            {
+                if (testCommand == null)
+                    testCommand = new RelayCommand(Write);
+                return testCommand; 
+            }
+        }
+
+        private void Write()
+        {
+            System.Windows.MessageBox.Show("Test");
+        }
 
         private ICommand buttonCommand;
 
